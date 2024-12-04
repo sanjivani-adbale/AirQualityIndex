@@ -1,0 +1,79 @@
+/* Main Container */
+.air-quality-container {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fdfdfd;
+  }
+  
+  /* Input Section */
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .input-label {
+    font-size: 1em;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .city-input {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .fetch-button {
+    padding: 10px 15px;
+    font-size: 1em;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .fetch-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Air Quality Info Section */
+  .air-quality-info {
+    margin-top: 20px;
+  }
+  
+  .city-heading {
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  .air-quality-info p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #34495e;
+  }
+  
+  /* Error Message Section */
+  .error-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .error-message {
+    color: red;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
