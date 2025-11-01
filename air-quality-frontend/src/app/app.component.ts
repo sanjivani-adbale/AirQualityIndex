@@ -7,9 +7,9 @@ import { AirQualityService } from './air-quality.service';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  city: string = ''; // Holds the city name input from the user
-  airQuality: any; // Holds the response data
-  errorMessage: string = ''; // Holds the error message to display
+  city: string = ''; 
+  airQuality: any; 
+  errorMessage: string = ''; 
 
   constructor(private airQualityService: AirQualityService) {}
 
@@ -19,7 +19,7 @@ export class AppComponent {
     this.airQualityService.getAirQuality(this.city).subscribe(
       (data) => {
         if (data && data.city) {
-          this.airQuality = data; // Bind data to the component variable
+          this.airQuality = data; 
           this.errorMessage = '';
         } else {
           this.errorMessage = `City "${this.city}" not found.`;
