@@ -6,6 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface AirQualityRepository extends JpaRepository<AirQuality, String> {
-    // JpaRepository provides the basic CRUD operations
 	AirQuality findByCity(String city);
 }
