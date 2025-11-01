@@ -12,6 +12,6 @@ export class AirQualityService {
 
   getAirQuality(city: string): Observable<any> {
     const apiUrl = `http://localhost:8080/api/air-quality/${city}`;
-    return this.http.get(apiUrl); // Ensure the URL matches your backend endpoint
+    return this.http.get(apiUrl); 
   }
 }
