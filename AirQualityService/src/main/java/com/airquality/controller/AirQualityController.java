@@ -24,6 +24,6 @@ public class AirQualityController {
 
 	@GetMapping("/{city}")
     public AirQuality getAirQuality(@PathVariable String city) {
-        return airQualityService.fetchAirQualityFromApi(city); // Calls the service to get data
+        return airQualityService.fetchAirQualityFromApi(city); 
     }
 }
