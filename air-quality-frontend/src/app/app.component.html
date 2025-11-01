@@ -1,5 +1,5 @@
 <div class="air-quality-container">
-  <!-- Input Section -->
+  
   <div class="input-container">
     <label for="city" class="input-label">Enter City:</label>
     <input
@@ -12,7 +12,7 @@
     <button (click)="fetchAirQuality()" class="fetch-button">Get Air Quality</button>
   </div>
 
-  <!-- Air Quality Display Section -->
+  
   <div *ngIf="airQuality" class="air-quality-info">
     <h2 class="city-heading">Air Quality for {{ airQuality.city | titlecase }}</h2>
     <p><strong>AQI:</strong> {{ airQuality.aqi }}</p>
@@ -20,7 +20,7 @@
     <p><strong>Time:</strong> {{ airQuality.time | date: 'medium' }}</p>
   </div>
 
-  <!-- Error Message Section -->
+  
   <div *ngIf="errorMessage" class="error-container">
     <p class="error-message">{{ errorMessage }}</p>
   </div>
